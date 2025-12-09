@@ -1,0 +1,152 @@
+style.css
+/* PAGE LAYOUT */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #ffe6f2;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 24px;
+}
+
+/* TITLES */
+.main-title {
+  color: purple;
+  text-align: center;
+  margin-top: 0;
+}
+
+.section-title,
+.social-title {
+  color: purple;
+  font-family: "Times New Roman", serif;
+}
+
+/* PROFILE PICTURE */
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* DESCRIPTION */
+.site-description {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* LANGUAGE SWITCHER */
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.lang-button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  background: #f3d1ff;
+  color: #4b0082;
+}
+
+.lang-button.active {
+  background: #4b0082;
+  color: white;
+}
+
+/* LINKS */
+a {
+  color: darkblue;
+  text-decoration: underline;
+  font-family: "Times New Roman", serif;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* PURPLE LINKEDIN BUTTON */
+.linkedin-button {
+  display: inline-block;
+  background-color: purple;
+  color: white !important;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.linkedin-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* SOCIAL LINKS */
+.social-links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LINKEDIN ICON */
+.linkedin-logo {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.linkedin-logo:hover {
+  transform: scale(1.25);
+  opacity: 0.8;
+}
+
+/* DIVIDER */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 24px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .card {
+    padding: 16px;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+}
